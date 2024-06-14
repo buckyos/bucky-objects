@@ -1,0 +1,32 @@
+[package]
+name = "bucky-objects"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+async-std = "1.12.0"
+bucky-raw-codec = {git="https://github.com/buckyos/bucky-raw-codec.git", branch="main", features = ["derive"]}
+bucky-error = {git = "https://github.com/buckyos/bucky-error.git"}
+bucky-crypto = {git = "https://github.com/buckyos/bucky-crypto.git"}
+bucky-time = {git = "https://github.com/buckyos/bucky-time.git"}
+serde = "1.0.202"
+log = "0.4.21"
+protobuf = { version = '2', features = ['with-bytes'] }
+base58 = '0.2.0'
+generic-array = { version = '0.12', default-features = false, features = ['serde'] }
+itertools = "0.13.0"
+once_cell = "1.19.0"
+primitive-types = "0.12.2"
+async-recursion = "1.1.1"
+rand = "0.8.5"
+async-trait = "0.1.80"
+lru_time_cache = "0.11.11"
+intbits = "0.2.0"
+base-x = "0.2"
+hex = "0.4.3"
+
+[build-dependencies]
+protoc-rust = '2'
+chrono = '0.4'
+protoc-bin-vendored = '3'
