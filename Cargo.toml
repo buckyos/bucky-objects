@@ -6,7 +6,7 @@ build = "build.rs"
 
 [dependencies]
 async-std = "1.12.0"
-bucky-raw-codec = {git="https://github.com/buckyos/bucky-raw-codec.git", branch="main", features = ["derive"]}
+bucky-raw-codec = {git="https://github.com/buckyos/bucky-raw-codec.git", features = ["derive"]}
 bucky-error = {git = "https://github.com/buckyos/bucky-error.git"}
 bucky-crypto = {git = "https://github.com/buckyos/bucky-crypto.git"}
 bucky-time = {git = "https://github.com/buckyos/bucky-time.git"}
